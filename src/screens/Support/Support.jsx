@@ -10,7 +10,7 @@ import { db } from "../../services/firebase";
 const HELPLINES = [
     { id: '1', name: 'National Ambulance', number: '108', icon: 'ambulance', color: '#E53935', desc: '24/7 Free Emergency' },
     { id: '2', name: 'Health Helpline', number: '104', icon: 'hospital-building', color: '#1E88E5', desc: 'Medical Advice' },
-    { id: '3', name: 'Emergency Services', number: '112', icon: 'phone-alert', color: '#F57C00', desc: 'Police, Fire, Medical' },
+    { id: '3', name: 'Emergency Services', number: '112', icon: 'phone', color: '#F57C00', desc: 'Police, Fire, Medical' },
     { id: '4', name: 'Women Helpline', number: '1091', icon: 'face-woman', color: '#8E24AA', desc: 'Women in Distress' },
     { id: '5', name: 'Child Helpline', number: '1098', icon: 'human-child', color: '#00897B', desc: 'Child Protection' },
     { id: '6', name: 'Mental Health', number: '1800-599-0019', icon: 'brain', color: '#5E35B1', desc: 'NIMHANS iCall' },

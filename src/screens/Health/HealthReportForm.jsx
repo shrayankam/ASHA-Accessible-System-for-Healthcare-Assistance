@@ -1,20 +1,24 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import {
-    View, Text, StyleSheet, ScrollView,
-    TouchableOpacity, Alert, KeyboardAvoidingView, Platform,
+    Alert, KeyboardAvoidingView, Platform,
+    ScrollView,
+    StyleSheet,
+    Text,
+    TouchableOpacity,
+    View,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { Button, Input, Card, Header } from '../../components/UIComponents';
+import { Button, Card, Header, Input } from '../../components/UIComponents';
+import { COLORS } from '../../constants/colors';
+import { BORDER_RADIUS, FONT_SIZE, FONT_WEIGHT, SPACING } from '../../constants/theme';
 import { geminiService } from '../../services/geminiService';
 import { healthService } from '../../services/healthService';
 import { useAuthStore, useHealthStore } from '../../store/store';
-import { COLORS } from '../../constants/colors';
-import { SPACING, FONT_SIZE, FONT_WEIGHT, BORDER_RADIUS } from '../../constants/theme';
 
 const SYMPTOM_CHIPS = [
-    'Fever', 'Headache', 'Cough', 'Cold', 'Body Pain',
+    'Fever', 'Headache', 'Body Pain',
     'Vomiting', 'Diarrhea', 'Fatigue', 'Chest Pain', 'Breathlessness',
-    'Rash', 'Stomach Ache', 'Dizziness', 'Joint Pain', 'Back Pain',
+    'Rash', 'Stomach Ache',
 ];
 
 const DURATION_OPTIONS = ['Today', '1-3 days', '4-7 days', '1-2 weeks', 'More than 2 weeks'];
@@ -151,7 +155,7 @@ Additional Information: ${additionalInfo || 'None'}
                 <View style={styles.section}>
                     <Input
                         label="Describe Other Symptoms"
-                        placeholder="e.g. Burning sensation while urinating, swollen ankles..."
+                        placeholder="e.g. Chest pain and shortness of breath"
                         value={customSymptoms}
                         onChangeText={setCustomSymptoms}
                         multiline

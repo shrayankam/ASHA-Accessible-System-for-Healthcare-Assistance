@@ -112,21 +112,51 @@ export default function Home({ navigation }) {
         setPlaces([
             {
                 id: 1,
-                name: "AIIMS Raipur",
-                latitude: 21.2587,
-                longitude: 81.5796
+                name: "Tulip Multispeciality Hospital",
+                latitude: 28.9816,
+                longitude: 77.0167
             },
             {
                 id: 2,
-                name: "Ramkrishna Care Hospital",
-                latitude: 21.2130,
-                longitude: 81.6537
+                name: "FIMS Hospital, Sonipat",
+                latitude: 28.9928,
+                longitude: 77.0174
             },
             {
                 id: 3,
-                name: "Suyash Superspeciality Hospital",
-                latitude: 21.2584,
-                longitude: 81.6060
+                name: "Primax Gastro Institute & Superspeciality Hospital",
+                latitude: 28.9943,
+                longitude: 77.0221
+            },
+            {
+                id: 4,
+                name: "Bhagwan Das Hospital, Sonipat",
+                latitude: 28.9899,
+                longitude: 77.0302
+            },
+            {
+                id: 5,
+                name: "Crossroads Multispeciality Hospital",
+                latitude: 28.9934,
+                longitude: 77.0195
+            },
+            {
+                id: 6,
+                name: "Noble Hospital, Kundli",
+                latitude: 28.8708,
+                longitude: 77.0882
+            },
+            {
+                id: 7,
+                name: "Park Nidaan Hospital",
+                latitude: 28.9911,
+                longitude: 77.0153
+            },
+            {
+                id: 8,
+                name: "City Hospital, Gohana Road",
+                latitude: 28.9876,
+                longitude: 77.0109
             }
         ]);
 
